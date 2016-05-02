@@ -13,7 +13,7 @@ Books have the following properties:
 | Property    | Intended use                               |
 |-------------|--------------------------------------------|
 | title       | Short title of the book                    |
-| ISBN        | Unique ISBN identifier of the book         |
+| isbn        | Unique ISBN identifier of the book         |
 | authors     | Link to authors of the book                |
 
 Authors have the following properties:

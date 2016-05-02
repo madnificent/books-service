@@ -2,6 +2,8 @@
 
 Service offering storage for basic information about Books.
 
+_Version: 1.0.0_
+
 ## Available resources ##
 
 The books service has support for Books and Authors.

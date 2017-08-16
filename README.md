@@ -2,7 +2,7 @@
 
 Service offering storage for basic information about Books.
 
-_Version: 1.0.0_
+_Version: 1.0.1_
 
 ## Available resources ##
 

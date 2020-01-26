@@ -2,7 +2,7 @@
 
 (define-resource book ()
   :class (s-prefix "schema:Book")
-  :properties `((:title :string ,(s-prefix "schema:headline"))
+  :properties `((:title :string ,(s-prefix "schema:name"))
                 (:isbn :string ,(s-prefix "schema:isbn")))
   :has-many `((author :via ,(s-prefix "schema:author")
                       :as "authors"))
@@ -10,8 +10,8 @@
   :on-path "books")
 
 (define-resource author ()
-  :class (s-prefix "schema:Author")
-  :properties `((:name :string ,(s-prefix "schema:name")))
+  :class (s-prefix "foaf:Person")
+  :properties `((:name :string ,(s-prefix "foaf:name")))
   :has-many `((book :via ,(s-prefix "schema:author")
                     :inverse t
                     :as "books"))

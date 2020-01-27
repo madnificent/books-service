@@ -2,7 +2,7 @@
 
 Service offering storage for basic information about Books.
 
-_Version: 1.0.1_
+_Version: 2.0.0_
 
 ## Available resources ##
 
@@ -27,3 +27,12 @@ Authors have the following properties:
 
 All calls which mu-cl-resources offers are supported for the resources `/books` and `/authors`.
 Authorization is not included.  This includes most of the calls specified by JSONAPI.org.
+
+
+## Docker Compose snippet
+
+    bookslisting:
+      image: madnificent/books-service:2.0.0
+      links:
+        - database:database
+
